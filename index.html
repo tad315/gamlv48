@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip the Cards with ITIS - LV1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://upkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+<div class="heading">
+    <ul>
+        <li class="list-items">
+            <a class="list-items" href="https://www.facebook.com/lcdkhoacntt1.ptit">Liên chi Đoàn Khoa CNTT1</a>
+        </li>
+    </ul>
+    <ul class="hlist">
+        <li class="list-items">Pause</li>
+    </ul>
+</div>
+
+<div class="inf">
+    <div class="inf-box">
+        <ul>
+            <li><h3 id="level">Level:  thẻ</h3></li>
+            <li><h3 id="nickname">Nickname:</h3> </li>
+        </ul>
+    </div>
+    <div class="inf-box">
+        <ul>
+            <li><h3 id="score">Score: 0</h3></li>
+            <li><h3 id="time">Time: 300s</h3></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="game-container"></div>
+
+<div id="end-game" class="end-game hidden">
+    <p id="final-score"></p>
+    <button id="restart-btn">Play Again</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const level = 48; // Change this to 48 for the other level
+        initializeGame(level);
+    });
+</script>
+</body>
+</html>
