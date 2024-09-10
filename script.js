@@ -62,7 +62,7 @@ function initializeGame(level) {
     });
 
     // Thiết lập thời gian
-    timeLeft = level === 24 ? 150 : 300; // Thời gian tùy thuộc vào cấp độ
+    timeLeft = level === 24 ? 100 : 200; // Thời gian tùy thuộc vào cấp độ
     document.getElementById('time').innerText = `Time: ${timeLeft}s`;
     if (timer) clearInterval(timer);
     timer = setInterval(updateTimer, 1000);
